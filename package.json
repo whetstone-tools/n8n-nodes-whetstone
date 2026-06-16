@@ -1,0 +1,59 @@
+{
+  "name": "n8n-nodes-whetstone",
+  "version": "0.1.1",
+  "description": "n8n community node for U.S. public-records data: business registration (KYB) across 25 states, new business filings, federal watchlist screening (OFAC/BIS/State Dept), and federal awards (USAspending). Powered by the Whetstone actors on Apify.",
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "whetstone",
+    "kyb",
+    "know-your-business",
+    "ofac",
+    "sanctions",
+    "watchlist-screening",
+    "business-search",
+    "public-records",
+    "compliance",
+    "due-diligence",
+    "usaspending",
+    "apify"
+  ],
+  "license": "MIT",
+  "homepage": "https://whetstonetools.com/company-check/",
+  "author": {
+    "name": "Whetstone Tools",
+    "email": "support@whetstonetools.com"
+  },
+  "engines": {
+    "node": ">=18.10"
+  },
+  "scripts": {
+    "build": "tsc && node copy-assets.js",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/WhetstoneApifyApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/WhetstonePublicRecords/WhetstonePublicRecords.node.js"
+    ]
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-n8n-nodes-base": "^1.16.3",
+    "jsonc-eslint-parser": "^3.1.0",
+    "n8n-workflow": "^1.70.0",
+    "typescript": "^5.5.4"
+  }
+}
