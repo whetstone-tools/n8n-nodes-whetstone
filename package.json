@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-whetstone",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "n8n community node for U.S. public-records data: business registration (KYB) across 25 states, new business filings, federal watchlist screening (OFAC/BIS/State Dept), and federal awards (USAspending). Powered by the Whetstone actors on Apify.",
   "keywords": [
     "n8n-community-node-package",
@@ -20,6 +20,13 @@
   ],
   "license": "MIT",
   "homepage": "https://whetstonetools.com/company-check/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whetstone-tools/n8n-nodes-whetstone.git"
+  },
+  "bugs": {
+    "url": "https://github.com/whetstone-tools/n8n-nodes-whetstone/issues"
+  },
   "author": {
     "name": "Whetstone Tools",
     "email": "support@whetstonetools.com"
